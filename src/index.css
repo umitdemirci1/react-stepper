@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .input{
+        @apply h-8 rounded-sm px-4 outline-none border border-blue-300 text-sm focus:border-gray-800 my-2 transition-colors shadow-sm
+    }
+
+    .textarea{
+        @apply w-[400px] p-1 rounded text-gray-800 text-sm resize-none border border-blue-300 focus:border-gray-800 transition-colors shadow-sm
+    }
+
+    .button{
+        @apply w-full h-8 bg-blue-500 hover:bg-blue-300 transition-colors text-white hover:text-gray-800 rounded
+    }
+}
